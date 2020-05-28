@@ -15,6 +15,9 @@
 		5226D4FC24781FC7000EC9B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5226D4FA24781FC7000EC9B5 /* LaunchScreen.storyboard */; };
 		5226D50724781FC8000EC9B5 /* screen_comTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226D50624781FC8000EC9B5 /* screen_comTests.swift */; };
 		5226D51224781FC8000EC9B5 /* screen_comUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226D51124781FC8000EC9B5 /* screen_comUITests.swift */; };
+		5226D5212478206F000EC9B5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5226D5202478206F000EC9B5 /* AVFoundation.framework */; };
+		5226D52324787301000EC9B5 /* TempiFFT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226D52224787300000EC9B5 /* TempiFFT.swift */; };
+		5226D55F2479D04C000EC9B5 /* GestureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5226D55E2479D04C000EC9B5 /* GestureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		5226D50D24781FC8000EC9B5 /* screen_comUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = screen_comUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5226D51124781FC8000EC9B5 /* screen_comUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = screen_comUITests.swift; sourceTree = "<group>"; };
 		5226D51324781FC8000EC9B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5226D5202478206F000EC9B5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		5226D52224787300000EC9B5 /* TempiFFT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempiFFT.swift; sourceTree = "<group>"; };
+		5226D55E2479D04C000EC9B5 /* GestureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GestureView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5226D5212478206F000EC9B5 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 				5226D50524781FC8000EC9B5 /* screen_comTests */,
 				5226D51024781FC8000EC9B5 /* screen_comUITests */,
 				5226D4ED24781FC3000EC9B5 /* Products */,
+				5226D51F2478206E000EC9B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +110,8 @@
 				5226D4EF24781FC3000EC9B5 /* AppDelegate.swift */,
 				5226D4F124781FC3000EC9B5 /* SceneDelegate.swift */,
 				5226D4F324781FC3000EC9B5 /* ViewController.swift */,
+				5226D55E2479D04C000EC9B5 /* GestureView.swift */,
+				5226D52224787300000EC9B5 /* TempiFFT.swift */,
 				5226D4F524781FC3000EC9B5 /* Main.storyboard */,
 				5226D4F824781FC7000EC9B5 /* Assets.xcassets */,
 				5226D4FA24781FC7000EC9B5 /* LaunchScreen.storyboard */,
@@ -126,6 +136,14 @@
 				5226D51324781FC8000EC9B5 /* Info.plist */,
 			);
 			path = screen_comUITests;
+			sourceTree = "<group>";
+		};
+		5226D51F2478206E000EC9B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5226D5202478206F000EC9B5 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +277,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5226D52324787301000EC9B5 /* TempiFFT.swift in Sources */,
 				5226D4F424781FC3000EC9B5 /* ViewController.swift in Sources */,
 				5226D4F024781FC3000EC9B5 /* AppDelegate.swift in Sources */,
 				5226D4F224781FC3000EC9B5 /* SceneDelegate.swift in Sources */,
+				5226D55F2479D04C000EC9B5 /* GestureView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5F9VEKL2B;
 				INFOPLIST_FILE = screen_com/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.screen-com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -455,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G5F9VEKL2B;
 				INFOPLIST_FILE = screen_com/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.screen-com";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
